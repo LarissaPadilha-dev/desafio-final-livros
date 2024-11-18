@@ -4,7 +4,7 @@ export default function header() {
     return (
       <header>
           <section>
-              <img src={logo} alt="imagem de livro" />
+              <img src={logo} alt="imagem de logo de livros" />
               <h1>Livros Vai na web</h1>
           </section>
           <ul>
