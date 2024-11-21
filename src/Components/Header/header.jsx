@@ -1,38 +1,34 @@
 import logo from "../../assets/Header/logo.png";
 import busca from "../../assets/Header/lupa.png";
-import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
-import Inicio from "../../Pages/Inicio/Inicio";
-import Doados from "../../Pages/Doados/Doados";
-import QueroDoar from "../../Pages/QueroDoar/QueroDoar";
+import {Link} from 'react-router-dom';
 import S from "./header.module.scss"
 
 
-export default function header() {
+export default function Header() {
     return (
-      <BrowserRouter>
-      <header>
+      <header className={S.header}>
           <section className={S.boxLogo}>
               <img src={logo} alt="imagem de logo de livros" />
               <h1>Livros Vai na web</h1>
           </section>
+          <nav className={S.paginas}>
           <ul>
-            <li><Link to="/">Início</Link></li>
-            <li><Link to="/doados">Livros Doados</Link></li>
-            <li><Link to="/queroDoar">Quero Doar</Link></li>
+            <li><Link className={S.link} to="/">Início</Link></li>
+            <li><Link className={S.link}to="/doados">Livros Doados</Link></li>
+            <li><Link className={S.link}to="/queroDoar">Quero Doar</Link></li>
           </ul>
-          <div>
+          </nav>
+          <div className={S.busca}>
           <input
-            type="text"
+            type="search"
+            name=""
+            id=""
             placeholder="O que você procura?"
           />
+          <button>
           <img src={busca} alt="icone de busca" />
+          </button>
           </div>
       </header>
-      <Routes>
-        <Route path='/' element={<Inicio/>} />
-        <Route path='/doados' element={<Doados/>} />
-        <Route path='/queroDoar' element={<QueroDoar/>} />
-      </Routes>
-      </BrowserRouter>
     )
   }

@@ -1,8 +1,75 @@
-
-header {
-    border: solid 2px red;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.header {
+    height: 18vh;
+    background:linear-gradient(90deg, #001B2F 0%, #005695 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .boxLogo {
-    background-color: aqua;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    img {
+        width: 15%;
+    }
+    h1 {
+        font-size: 23px;
+        color: rgba(255, 255, 255, 1);
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
 }
+
+.paginas {
+    width: 35%;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .link {
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+        &:hover {
+            color: rgb(116, 104, 110);
+          }
+    }
+}
+
+.busca {
+    border: solid #fff;
+    border-radius: 16px;
+    margin-right: 1%;
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: 59%;
+    height: 5vh;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 14px;
+      font-family: "Inter", sans-serif;
+      font-weight: 200;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
