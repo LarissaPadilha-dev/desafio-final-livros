@@ -1,7 +1,11 @@
-import React from 'react'
+import S from "./inicio.module.scss"
 
 export default function Inicio() {
   return (
-    <div>Inicio</div>
+  <section>
+      <section className={S.logo}>
+          <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
+      </section>
+  </section>
   )
 }

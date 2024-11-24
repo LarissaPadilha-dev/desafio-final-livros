@@ -19,15 +19,9 @@ export default function Header() {
           </ul>
           </nav>
           <div className={S.busca}>
-          <input
-            type="search"
-            name=""
-            id=""
-            placeholder="O que você procura?"
-          />
-          <button>
-          <img src={busca} alt="icone de busca" />
-          </button>
+                <input type="text" placeholder='O que você procura?' />
+                <img src={busca} alt="" />
+        
           </div>
       </header>
     )
