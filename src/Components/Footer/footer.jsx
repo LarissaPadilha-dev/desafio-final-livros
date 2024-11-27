@@ -10,14 +10,14 @@ export default function footer() {
   return (
     <footer className={S.footer}>
         <section className={S.icones}>
-            <p>4002-8922</p>
-            <div>
-                <img src={facebook} alt="" />
-                <img src={twitter} alt="" />
-                <img src={youtube} alt="" />
-                <img src={linkedin} alt="" />
-                <img src={instagram} alt="" />
-            </div>
+            <h3>4002-8922</h3>
+            <nav>
+                <a href=""><img src={facebook} alt="ícone do facebook" /></a>
+                <a href=""><img src={twitter} alt="ícone do twitter" /></a>
+                <a href=""><img src={youtube} alt="ícone do youtube" /></a>
+                <a href=""><img src={linkedin} alt="ícone do linkedin" /></a>
+                <a href=""><img src={instagram} alt="ícone do instagram" /></a>
+            </nav>
         </section>
         <section className={S.texto}>
             <p>Layout desenvolvido pela Vai Na Web para fins educativos - 2024 </p>
