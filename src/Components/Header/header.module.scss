@@ -9,7 +9,7 @@
 
 .boxLogo {
     
-    width: 23vw;
+    width: 22vw;
     display: flex;
     color: white;
     align-items: center;
@@ -17,6 +17,9 @@
     justify-content: space-evenly;
     font-family: "Inter", sans-serif;
     font-weight: 700; 
+    img {
+        width: 4vw; 
+    }
 }
 
 .paginas {

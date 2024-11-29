@@ -1,44 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .footer {
-    background-color: #005695;
-    width: 100%;
-    height: 16vh;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    height: 30vh;
 }
   
 .icones {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%; 
-    margin: 10px ;
-      h3 {
-        color: white;
-        font-family: "Inter", sans-serif;
-      }
-      img {
-        width: 32px;
-        height: 32px;
-        margin: 10px;
+  background-color: #005695;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+    nav{
+      width: 18vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
         transition: transform 0.3s;
-        &:hover {
-          transform: scale(1.1);
+           &:hover {
+            transform: scale(1.1);
         }
       }
+    }      
+  
     }
   
-.texto {
-    background-color: black;
+.end {
+    background-color:#232020;
     display: flex; 
     align-items: center;
     justify-content: center;
     color: white;
-    width: 100%;
-    height: 10vh;
+    height: 14vh;
     text-align: center;
     font-size: 14px;
     font-family: "Inter", sans-serif;

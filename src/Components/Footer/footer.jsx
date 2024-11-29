@@ -19,7 +19,7 @@ export default function footer() {
                 <a href=""><img src={instagram} alt="ícone do instagram" /></a>
             </nav>
         </section>
-        <section className={S.texto}>
+        <section className={S.end}>
             <p>Layout desenvolvido pela Vai Na Web para fins educativos - 2024 </p>
         </section>
 
