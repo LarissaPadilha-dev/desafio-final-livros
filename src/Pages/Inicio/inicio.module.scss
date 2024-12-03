@@ -3,7 +3,7 @@
 .logo {
     background-image: url('../../assets/Inicio/livros-doação.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 88vh;
     display: flex;
     align-items: center;
@@ -55,6 +55,7 @@
         p {
             text-align: center;
             font-size: 17px;
+            width: 70%;
             font-family: "Inter", sans-serif;
             font-weight: 400;
         }

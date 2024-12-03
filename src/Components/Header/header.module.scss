@@ -17,6 +17,10 @@
     justify-content: space-evenly;
     font-family: "Inter", sans-serif;
     font-weight: 700; 
+    h1{
+        font-size: 25px;
+        font-weight: bold;
+      }
     img {
         width: 4vw; 
     }
@@ -49,6 +53,8 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
+    padding-right: 20px;
+    margin-right: 20px;
 }
 
 input {
@@ -56,10 +62,13 @@ input {
     outline: none;
     border: none;
     color: white;
+    width: 13vw;
+    padding-left: 18px;
     font-size: 15px;
         &::placeholder {
         color: #fff;
         font-family: "Inter", sans-serif;
+        font-weight: 400;
     }
   }
 

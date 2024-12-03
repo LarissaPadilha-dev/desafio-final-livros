@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .doados {
-    padding: 2rem; 
-}
-
-.texto {
-    text-align: center;
-    font-family: "Inter", sans-serif;
-}
-
-.caixa {
-    border: solid 3px #005695;
-    width: 15vw;
-    height: 40vh;
-    border-radius: 15px;
+    height: 80vh;
     display: flex;
     flex-direction: column;  
     align-items: center;    
-    justify-content: center;         
+    justify-content: space-evenly;
 }
 
+
 .descricao {
-    font-family: "Inter", sans-serif;
-    text-align: center;
-}
+    width: 85vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    article{
+        border: solid 2px #005695;
+        width: 15vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 15px;
+    }
+}   
+    
