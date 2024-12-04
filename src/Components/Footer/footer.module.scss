@@ -43,3 +43,24 @@
   }
 
   // ------------------------------------------ Responsivo Footer -------------------------------------------------------------
+  @media(max-width: 1000px){
+    .icones{
+        nav{
+            width: 220px;
+        }
+    }
+}
+
+@media(max-width: 479px){
+    .icones{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .end{
+        p{
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+}
