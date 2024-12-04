@@ -61,3 +61,52 @@ input:nth-child(6){
 }
 
 // ------------------------------------------ Responsivo Quero Doar -------------------------------------------------------------
+@media (max-width: 1200px) {
+    .queroDoar {
+        height: auto;
+    }
+
+    .formulario {
+        width: 70%;
+    }
+
+    form {
+        width: 50%;
+        height: auto;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    input:nth-child(6) {
+        width: 50%;
+    }
+}
+
+// Responsividade para telas de até 800px
+@media (max-width: 800px) {
+    .queroDoar {
+        height: auto;
+        padding: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    input:nth-child(6) {
+        width: 100%;
+    }
+}
