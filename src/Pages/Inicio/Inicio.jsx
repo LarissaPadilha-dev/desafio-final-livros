@@ -3,12 +3,29 @@ import img1 from "../../assets/Inicio/img-1.png";
 import img2 from "../../assets/Inicio/img-2.png";
 import img3 from "../../assets/Inicio/img-3.png";
 import img4 from "../../assets/Inicio/img-4.png";
+import React, { useState, useEffect } from 'react';
 
 export default function Inicio() {
+  const [Titulo, setTitulo] = useState('');
+
+  useEffect(() => {
+    const titulo =
+      "VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO";
+    
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      setTitulo(titulo.substring(0, currentIndex));
+      currentIndex++;
+      if (currentIndex > titulo.length) clearInterval(interval);
+    }, 120); 
+
+    return () => clearInterval(interval); 
+  }, []);
+
   return (
   <main className={S.inicio}>
       <section className={S.logo}>
-          <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
+          <h2>{Titulo}</h2>
       </section>
       <section className={S.devoDoar}>
           <div>
