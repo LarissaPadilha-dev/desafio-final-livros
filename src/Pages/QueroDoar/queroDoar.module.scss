@@ -61,52 +61,52 @@ input:nth-child(6){
 }
 
 // ------------------------------------------ Responsivo Quero Doar -------------------------------------------------------------
-@media (max-width: 1200px) {
-    .queroDoar {
-        height: auto;
-    }
-
+@media (max-width: 1300px) {
     .formulario {
-        width: 70%;
-    }
+        form {
+        width: 325px;
+        }
 
-    form {
-        width: 50%;
-        height: auto;
-    }
+        input {
+        width: 288px;
+        }
 
-    input {
-        width: 70%;
-    }
-
-    input:nth-child(6) {
-        width: 50%;
+        input:nth-child(6) {
+        width: 130px;
+        }
     }
 }
 
-// Responsividade para telas de até 800px
-@media (max-width: 800px) {
-    .queroDoar {
-        height: auto;
-        padding: 20px;
-    }
-
+@media (max-width: 970px) {
     .formulario {
-        width: 100%;
+        h2 {
+            
+            text-align: center;
+            font-size: 28px;
+        }
     }
+}
 
-    form {
-        width: 80%;
-        height: auto;
-        padding: 20px;
+@media(max-width: 480px) {
+    .formulario {
+        h2 {
+            font-size: 25px;
+        }
+        form{
+            div {
+             h3 {
+             font-size: 5vw;
+            }
+             img {
+              width: 14vw;
+           }
+        }
+        input {
+            width: 70%;
+        }
+        input:nth-child(6) {
+            width: 30vw;
+        }
     }
-
-    input {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    input:nth-child(6) {
-        width: 100%;
-    }
+  }
 }
