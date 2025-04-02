@@ -10,18 +10,19 @@ export default function QueroDoar(){
     const[autor,setAutor] = useState("")
     const[imagem_url,setImagem_url] = useState("")
 
-    const enviarDados = async()=>{
-        const urlApi = "https://desafio-2-api-livros-vai-na-web-1al1.onrender.com" 
-
-        const dadosEnviar = {
-            titulo,
-            categoria,
-            autor,
-            imagem_url
-        }
-        await axios.post(urlApi, dadosEnviar)
-
-        alert("Livro cadastrado com sucesso!!")
+    const enviarDados = async() =>{
+      const urlApi = "https://desafio-2-api-livros-vai-na-web-1al1.onrender.com/doar"; 
+      
+      const dadosEnviar = {
+        titulo,
+        categoria,
+        autor,
+        imagem_url
+      }
+        
+      await axios.post(urlApi, dadosEnviar)
+        
+      alert("Livro cadastrado com sucesso!!")
 
         setTitulo("")
         setCategoria("")
@@ -29,6 +30,7 @@ export default function QueroDoar(){
         setImagem_url("")
     }
 
+  
     const capturaTitulo = (e) =>{
         setTitulo(e.target.value)
         console.log(e.target.value)
@@ -60,7 +62,7 @@ export default function QueroDoar(){
                     <input type="text" placeholder='Categoria' onChange={capturaCategoria} value={categoria} />
                     <input type="text" placeholder='Autor' onChange={capturaAutor} value={autor}  />
                     <input type="text" placeholder='Link da Imagem' onChange={capturaImagem} value={imagem_url} />
-                    <input type="submit" value="Doar" onClick={enviarDados} />
+                    <input onClick={enviarDados} type="submit" value="Doar" />
                 </form>
             </section>
         </section>
